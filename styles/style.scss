@@ -1,85 +1,9 @@
 @import 'variables';
+@import 'global';
+@import 'header';
 @import 'calendar';
 @import 'popup';
-
-.header {
-    padding: 0 110px;
-
-    @media (max-width: 1045px) {
-        padding: 0 30px;
-    }
-
-    @media (max-width: 500px) {
-        padding: 0 5px;
-    }
-
-    &__logo {
-        img {
-            max-width: 100%;
-        }
-    }
-
-    &__body {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 150px;
-
-        @media (max-width: 1045px) {
-            text-align: left;
-            height: 100px;
-        }
-    }
-}
-
-.navbar {
-    &__list {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-    }
-    &__item {
-        font-size: 28px;
-        font-weight: 500;
-        margin-right: 70px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        @media (max-width: 1045px) {
-            font-size: 20px;
-        }
-
-        @media (max-width: 768px) {
-            margin-right: 20px;
-            font-size: 15px;
-        }
-    }
-
-    &__link {
-        letter-spacing: 0.56px;
-        color: #3d3d3d;
-        text-transform: uppercase;
-        font-weight: 500;
-        position: relative;
-
-        &.active {
-            position: relative;
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: -20px;
-                left: 50%;
-                transform: translate(-50%, 0);
-                width: 14px;
-                height: 14px;
-                border-radius: 50%;
-                background-color: $yellow;
-            }
-        }
-    }
-}
+@import 'about';
 
 main {
     position: relative;
@@ -172,39 +96,5 @@ main {
 
     @media (max-width: 1045px) {
         width: 100%;
-    }
-}
-
-.about {
-    max-width: 75vw;
-    margin: 0 auto;
-
-    &__title {
-        font-size: 34px;
-        line-height: 100px;
-        font-weight: bold;
-        letter-spacing: -0.68px;
-        color: #3d3d3d;
-
-        @media (max-width: 768px) {
-            font-size: 30px;
-            line-height: 40px;
-            margin-bottom: 20px;
-        }
-    }
-
-    &__text {
-        font-size: 20px;
-        line-height: 36px;
-        font-weight: 300;
-        letter-spacing: 0.4px;
-        color: #3d3d3d;
-        margin-bottom: 20px;
-
-        @media (max-width: 768px) {
-            font-size: 18px;
-            line-height: 28px;
-            margin-bottom: 10px;
-        }
     }
 }

@@ -13,6 +13,10 @@ const Calendar = () => {
 
     const dispatch = useDispatch();
 
+    useEffect(() => {
+        setCalendar(buildCalendar(value));
+    }, [value]);
+
     const buildCalendar = (value) => {
         const startDay = value.clone().startOf('month').startOf('week');
         const endDay = value.clone().endOf('month').endOf('week');
@@ -43,10 +47,6 @@ const Calendar = () => {
         if (isSelected(day)) return 'selected';
         return '';
     };
-
-    useEffect(() => {
-        setCalendar(buildCalendar(value));
-    }, [value]);
 
     const currMonthName = () => {
         return value.format('MMMM');
