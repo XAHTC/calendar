@@ -2,6 +2,7 @@
     font-size: 1rem;
     width: 100%;
     max-width: 467px;
+    height: 440px;
 
     font-weight: 500;
 
@@ -15,18 +16,18 @@
         justify-content: space-between;
 
         .previous {
-            width: 10px;
-            height: 15px;
-            margin-left: 1rem;
+            width: 15px;
+            height: 20px;
+            margin-left: 1.3rem;
             color: $grey;
             cursor: pointer;
             transform: rotateY(180deg);
         }
 
         .next {
-            width: 10px;
-            height: 15px;
-            margin-right: 1rem;
+            width: 15px;
+            height: 20px;
+            margin-right: 1.3rem;
             color: $grey;
             cursor: pointer;
         }
