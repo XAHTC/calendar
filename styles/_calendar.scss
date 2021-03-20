@@ -3,8 +3,10 @@
     width: 100%;
     max-width: 467px;
     height: 440px;
-
     font-weight: 500;
+    opacity: 0;
+
+    animation: fadeIn 1.5s ease-in-out 2s forwards;
 
     .head {
         margin-bottom: 10px;

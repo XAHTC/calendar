@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header__body">
-                <div className="header__logo">
+                <div className="header__logo" fadeIn>
                     <img src={logo} />
                 </div>
                 <nav className="navbar">

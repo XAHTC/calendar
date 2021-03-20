@@ -10,6 +10,7 @@
     }
 
     &__logo {
+        animation: fromLeft 1s ease-in-out;
         img {
             max-width: 100%;
         }
@@ -29,6 +30,8 @@
 }
 
 .navbar {
+    animation: fromRight 1s ease-in-out;
+
     &__list {
         display: flex;
         list-style-type: none;
@@ -74,5 +77,25 @@
                 background-color: $yellow;
             }
         }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }
