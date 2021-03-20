@@ -8,6 +8,9 @@
         font-weight: bold;
         letter-spacing: -0.68px;
         color: $darkgrey;
+        opacity: 0;
+
+        animation: fadeIn 1s ease-in-out forwards;
 
         @media (max-width: 768px) {
             font-size: 30px;
@@ -23,6 +26,9 @@
         letter-spacing: 0.4px;
         color: $darkgrey;
         margin-bottom: 20px;
+        opacity: 0;
+
+        animation: fadeIn 1s ease-in-out 1s forwards;
 
         @media (max-width: 768px) {
             font-size: 18px;

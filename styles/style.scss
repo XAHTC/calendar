@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'global';
+@import 'animations';
 @import 'header';
 @import 'calendar';
 @import 'popup';
@@ -107,24 +108,7 @@ main {
     @media (max-width: 1045px) {
         width: 100%;
     }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fromRight {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0%);
+    @media (max-width: 768px) {
+        padding-top: 20px;
     }
 }
