@@ -22,6 +22,7 @@ main {
 
 .hero {
     width: 64%;
+    height: 100%;
     background-image: url('../assets/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,6 +52,10 @@ main {
         @media (max-width: 768px) {
             padding-top: 40px;
         }
+
+        @media (max-height: 400px) {
+            padding-top: 0;
+        }
     }
 
     &__title {
@@ -70,7 +75,13 @@ main {
         }
 
         @media (max-width: 768px) {
+            margin-bottom: 20px;
             max-width: 600px;
+        }
+
+        @media (max-height: 400px) {
+            font-size: 25px;
+            margin-bottom: 0;
         }
     }
 
